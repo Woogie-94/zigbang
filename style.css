@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: SpoqaR;
+  src: url(./font/SpoqaHanSansNeo-Regular.ttf);
+}
+
+@font-face {
+  font-family: SpoqaM;
+  src: url(./font/SpoqaHanSansNeo-Medium.ttf);
+}
+
+@font-face {
+  font-family: SpoqaB;
+  src: url(./font/SpoqaHanSansNeo-Bold.ttf);
+}
+
+.header {
+  width: 100%;
+  font-family: SpoqaR;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header__top .left {
+  display: flex;
+  padding-left: 20px;
+}
+.header__top .left .logo {
+  width: 112px;
+  margin-right: 13px;
+}
+.header__top .left .logo a {
+  display: block;
+  width: 100%;
+}
+.header__top .left .logo img {
+  width: 100%;
+}
+.header__top .left .nav {
+  display: flex;
+  align-items: center;
+}
+.header__top .left .nav__list {
+  display: flex;
+}
+.header__top .left .nav__item {
+  margin: 0 21px;
+}
+.header__top .left .nav__item a {
+  color: #fa880b;
+}
+.header__top .left .nav__item:hover {
+  color: #fa880b;
+  transition: 0.1s;
+}
+.header__top .left .nav__item-name {
+  font-family: SpoqaB;
+  font-size: 1.65rem;
+  margin-bottom: 4px;
+}
+.header__top .left .nav__item-detail {
+  font-size: 1.2rem;
+}
+.header__top .right {
+  display: flex;
+  height: 100%;
+}
+.header__top .right .sign {
+  display: flex;
+  align-items: center;
+}
+.header__top .right .sign button {
+  width: 110px;
+  height: 30px;
+  font-size: 1.1rem;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.header__top .right .add-banner {
+  width: 175px;
+}
+.header__top .right .add-banner a {
+  padding: 21px;
+  margin-left: 7px;
+}
+.header__top .right .add-banner img {
+  width: 100%;
+}
+.header__bottom {
+  height: 49px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+.header__bottom ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 32px;
+}
+.header__bottom ul li {
+  height: 100%;
+  line-height: 49px;
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 0 20px;
+}
+.header__bottom ul .on {
+  position: relative;
+  font-family: SpoqaM;
+  color: #000;
+}
+.header__bottom ul .on::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 86px;
+  height: 2px;
+  background: #000;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  font-family: SpoqaR;
+  color: #292929;
+}
+.content .room {
+  width: 400px;
+  height: calc(100vh - 129px);
+}
+.content .room__count {
+  width: 100%;
+  height: 56px;
+  font-family: SpoqaM;
+  font-size: 1.8rem;
+  line-height: 60px;
+  padding: 0 26px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.content .room__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background: #eee;
+}
+.content .room__empty img {
+  width: 80px;
+}
+.content .room__empty p:nth-of-type(1) {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 13px 0;
+}
+.content .room__empty p:nth-of-type(2) {
+  font-size: 1.3rem;
+}
+.content .room__list {
+  height: calc(100% - 56px);
+  overflow-y: auto;
+}
+.content .room__item-container {
+  width: 100%;
+}
+.content .room__item-container::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #eee;
+}
+.content .room__item-container-type {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 10px 18px;
+}
+.content .room__items {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 132px;
+  padding: 10px 18px;
+}
+.content .room__items:hover {
+  background: #eee;
+}
+.content .room__item-img {
+  overflow: hidden;
+  width: 145px;
+  height: 100%;
+  background: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border: 1px solid #888;
+}
+.content .room__item-info {
+  width: 194px;
+  height: 100%;
+}
+.content .room__item-info-type {
+  color: #777;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 7px;
+}
+.content .room__item-info-cost {
+  font-family: SpoqaB;
+  font-size: 1.8rem;
+  padding: 5px 0;
+}
+.content .room__item-info-area,
+.content .room__item-info-address {
+  font-size: 1.3rem;
+}
+.content .room__item-info-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  color: #777;
+  font-size: 1.4rem;
+  padding-top: 5px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/geohash.js"></script>
+    <script src="./js/utill.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="left">
+          <h1 class="logo">
+            <a href="#">
+              <img src="./image/zigbang_logo.png" alt="zigbang logo img" />
+            </a>
+          </h1>
+          <div class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <p class="nav__item-name">아파트</p>
+                <p class="nav__item-detail">매매/전월세/신축분양</p>
+              </li>
+              <li class="nav__item">
+                <p class="nav__item-name">빌라, 투룸+</p>
+                <p class="nav__item-detail">신축분양/매매/전월세</p>
+              </li>
+              <li class="nav__item">
+                <a href="">
+                  <p class="nav__item-name">원룸</p>
+                  <p class="nav__item-detail">전월세</p>
+                </a>
+              </li>
+              <li class="nav__item">
+                <p class="nav__item-name">오피스텔</p>
+                <p class="nav__item-detail">도시형생활주택/전월세</p>
+              </li>
+              <li class="nav__item">
+                <p class="nav__item-name">창업/사무실</p>
+                <p class="nav__item-detail">임대/매매</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="sign">
+            <button>로그인 및 회원가입</button>
+          </div>
+          <div class="add-banner">
+            <a href="#">
+              <img src="./image/ceo_ad_img.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <ul>
+          <li class="on">방 찾기</li>
+          <li>찜한 매물</li>
+          <li>방 내놓기(전월세만)</li>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <div id="map" style="width: calc(100% - 400px); height: calc(100vh - 129px)"></div>
+      <div class="room">
+        <div class="room__count"></div>
+        <div class="room__list"></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3ba32bd1064fbf2d593d7de86d62cf9&libraries=clusterer"></script>
+  <script src="./js/map.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/index.js"></script>
+</html>
