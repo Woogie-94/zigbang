@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
